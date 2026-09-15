@@ -8,7 +8,10 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-    origin: "https://didactic-spoon-qvp7qp6479q4265xr-5173.app.github.dev",
+    origin: [
+        "http://localhost:4173",
+        "https://didactic-spoon-qvp7qp6479q4265xr-5173.app.github.dev"
+    ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type"]
 }));
