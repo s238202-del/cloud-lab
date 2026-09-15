@@ -6,7 +6,7 @@ services:
     ports:
       - "5000:5000"
     environment:
-      MONGODB_URI: "mongodb+srv://s238202:s238202@cluster0.7h39ffa.mongodb.net/?appName=Cluster0"
+      MONGODB_URI: "mongodb+srv://s238202:s238202@cluster0.7h39ffa.mongodb.net/cloud_lab?appName=Cluster0"
 
   frontend:
     build:
