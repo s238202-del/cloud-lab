@@ -3,11 +3,9 @@ services:
     image: s238202/mern-backend:1.0
     ports:
       - "5000:5000"
-    environment:
-      MONGODB_URI: "mongodb+srv://s238202:s238202@cluster0.7h39ffa.mongodb.net/cloud_lab?appName=Cluster0"
-      PORT: 5000
+    env_file:
+      - ./mern-demo/.env
 
   frontend:
-    image: s238202/mern-frontend:1.0
-    ports:
+    image: s238202/mern-frontend:2.0
       - "4173:4173"
